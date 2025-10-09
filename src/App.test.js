@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders business name in header only', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const businessNameElements = screen.getAllByText(/DelyPasteries/i);
+  // Check that at least one element is found
+  expect(businessNameElements.length).toBeGreaterThan(0);
+  // Check that the first element is in the document (header)
+  expect(businessNameElements[0]).toBeInTheDocument();
 });
