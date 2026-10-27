@@ -1,5 +1,3 @@
-import './DelyPasteries.css';
-
 export default function DelyPasteriesLanding() {
   const products = [
     {

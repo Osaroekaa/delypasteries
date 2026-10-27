@@ -1,3 +1,4 @@
+import './App.css';
 import DelyPasteriesLanding from './DelyPasteries';
 
 function App() {
